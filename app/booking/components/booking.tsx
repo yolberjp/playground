@@ -32,7 +32,7 @@ function ReservationProgress({ currentSectionIndex }: { currentSectionIndex?: nu
     { name: 'Fecha', icon: <CalendarDays className="w-4" /> },
     { name: 'Hora', icon: <Clock4 className="w-4" /> },
     { name: 'Pers...', icon: <Users className="w-4" /> },
-    { name: 'Confirmar', icon: <CircleCheck className="w-4" /> },
+    { name: 'Hecho', icon: <CircleCheck className="w-4" /> },
   ]
 
   return (
