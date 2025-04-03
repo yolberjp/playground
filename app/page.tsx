@@ -1,7 +1,17 @@
 import { Separator } from "@/components/ui/separator";
 import { Shapes } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+
+const links = [
+  {
+    href: "/booking",
+    label: "Booking by steps",
+  },
+  {
+    href: "/brutalist-buttons",
+    label: "Brutalist buttons",
+  },  
+];
 
 export default function Home() {
   return (
@@ -22,11 +32,13 @@ export default function Home() {
           <h3 className="text-md italic text-gray-500">The last cooked components:</h3>
         </header>
         <ul className="px-10 md:px-20 list-disc">
-          <li>
-            <Link href="booking" className="hover:text-yellow-800">
-              Booking by steps
-            </Link>
-          </li>
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="hover:text-yellow-800">
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
       

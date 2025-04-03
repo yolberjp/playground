@@ -1,10 +1,7 @@
-import { Button } from "@/components/ui/button";
-import Reservation from "./components/booking";
-import { ChevronLeft } from "lucide-react";
-import Link from "next/link";
 import Section from "@/components/section/section";
+import Reservation from "./components/reservation";
 
-export default function(){
+export default function Booking() {
     return (
         <Section title="Booking by steps" subtitle="a progressive booking form">
             <Reservation />
