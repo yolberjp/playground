@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Components Laboratory
 
-## Getting Started
+A creative and experimental space where I develop and test different UI components using modern technologies. This project serves as a testing ground for implementing innovative designs and practicing new frontend development techniques.
 
-First, run the development server:
+## 🌐 Demo
+
+You can find the project in production at [https://playground-yolberjp.vercel.app](https://playground-yolberjp.vercel.app)
+
+## ✨ Current Components
+
+- 📅 Booking Calendar - An interactive calendar component
+- 🎯 Brutalist Buttons - Collection of brutalist-style buttons
+- [More components in development...]
+
+## 🛠️ Technologies
+
+This laboratory is built with:
+
+- [Next.js](https://nextjs.org) - Production-ready React framework
+- [TypeScript](https://www.typescriptlang.org/) - Static typing for JavaScript
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com) - Reusable and accessible components
+- [PNPM](https://pnpm.io) - Fast and efficient package manager
+
+## 💡 Inspiration
+
+This project is inspired by various designs and concepts from the community. Each component includes references and credits to its sources of inspiration when applicable.
+
+## 🚀 Quick Start
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yolberjp/playground
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser to explore the components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+├── app/
+│   ├── booking-calendar/    # Calendar component
+│   ├── brutalist-buttons/   # Brutalist buttons collection
+│   └── ...
+├── components/             # Reusable components
+└── ...
+```
 
-## Deploy on Vercel
+## 🤝 Contributions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Do you have an interesting idea for a new component? Contributions are welcome! Feel free to:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the project
+2. Create a branch for your component (`git checkout -b my-new-component`)
+3. Commit your changes (`git commit -m 'Add new component'`)
+4. Push to the branch (`git push origin my-new-component`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is under the MIT license. Feel free to use, modify, and distribute the code as you wish.
+
+---
+
+Developed with 💻 and ☕ by @yolberjp
