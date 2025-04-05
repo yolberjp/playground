@@ -28,14 +28,14 @@ export default function Home() {
 
       <Separator />
 
-      <section className="space-y-4">
+      <section className="space-y-6">
         <header>
           <h3 className="text-md italic text-gray-500">The last cooked components:</h3>
         </header>
-        <ul className="px-10 md:px-20 space-y-2">
+        <ul className="px-10 md:px-20 space-y-3">
           {links.map((link) => (
-            <li key={link.href}>
-              <Link href={link.href} className="hover:text-yellow-800 flex flex-row items-center gap-2">
+            <li key={link.href} className="w-fit">
+              <Link href={link.href} className="text-md hover:text-yellow-800 flex flex-row items-center gap-2">
                 {link.icon}
                 {link.label}
               </Link>

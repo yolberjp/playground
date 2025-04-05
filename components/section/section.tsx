@@ -17,7 +17,7 @@ export default function Section({
     }
   }>){
     return (
-        <section className="flex flex-col pt-20 gap-8 row-start-2 items-center sm:items-start">
+        <section className="flex flex-col pt-20 gap-12 md:gap-8 row-start-2 items-center sm:items-start">
           <header className="px-0 md:px-10 w-full">
             <div className="flex flex-row gap-1">
             <Button variant="ghost" asChild>
