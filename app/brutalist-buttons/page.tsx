@@ -3,7 +3,7 @@ import { Atom, CircleCheck, Ghost } from "lucide-react";
 import AnimatedButton from "./components/animated";
 import DefaultButton from "./components/default";
 import GhostButton from "./components/ghost";
-import IconButton from "./components/icon";
+import IconButton from "./components/icon-button";
 import TinyButton from "./components/tiny";
 
 const inspiredBy = {
