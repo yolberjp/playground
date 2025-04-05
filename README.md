@@ -4,7 +4,7 @@ A creative and experimental space where I develop and test different UI componen
 
 ## 🌐 Demo
 
-You can find the project in production at [https://playground-yolberjp.vercel.app](https://playground-yolberjp.vercel.app)
+You can find the project in production at [https://playground.yolberjp.com](https://playground.yolberjp.com)
 
 ## ✨ Current Components
 
