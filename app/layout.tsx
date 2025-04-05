@@ -33,6 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 md:left-auto md:right-4 md:translate-x-0 text-xs text-gray-400 text-center md:text-right">
+          made with the cora <br /> by <a href="https://www.linkedin.com/in/yolberjp/" className="text-amber-700 hover:text-amber-800 transition-colors">@yolberjp</a>
+        </div>
         <main className="max-w-6xl m-auto px-5">
           {children}
         </main>
