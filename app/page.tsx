@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const links = [
   {
-    href: "/booking",
-    label: "Booking by steps",
+    href: "/booking-calendar",
+    label: "Booking calendar",
     icon: <Calendar />
   },
   {

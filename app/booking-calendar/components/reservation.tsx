@@ -9,8 +9,8 @@ import { Separator } from '@/components/ui/separator'
 
 export default function Reservation() {
   return (
-    <div className="max-w-80 border border-border rounded-md p-2 space-y-2">
-      <ReservationProgress currentSectionIndex={2} />
+    <div className="max-w-80 border border-border rounded-md p-2 space-y-2 select-none">
+      <ReservationProgress />
       <Separator />
       <MonthHeader />
       <WeekDays />
@@ -35,13 +35,19 @@ function ReservationProgress({ currentSectionIndex }: { currentSectionIndex?: nu
     { name: 'Hecho', icon: <CircleCheck className="w-4" /> },
   ]
 
+  // temporarily disabled
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleSectionClick = (index: number) => {
+    setActiveSectionLevel(index + 1)
+  }
+
   return (
     <div className="flex flex-row bg-teal-800 bg-opacity-10 rounded-lg text-center p-0">
       {sections.map((section, key) => (
-        <div key={key} className="flex flex-row cursor-pointer" onClick={() => setActiveSectionLevel(key + 1)}>
+        <div key={key} className="flex flex-row cursor-pointer">
           <div
             className={cn(
-              'flex justify-center p-1 min-w-16',
+              'flex justify-center p-1 min-w-16 text-white',
               key === 0 && firstSectionClass,
               key === sections.length - 1 && lastSectionClass,
               activeSectionLevel > key + 1 && pastSectionClass,
@@ -75,7 +81,7 @@ function MonthHeader() {
       <Button variant="ghost" className="p-1 h-6 hover:bg-teal-800 hover:bg-opacity-10">
         <ChevronLeft className="h-2 w-5" />
       </Button>
-      <p className="font-black">Diciembre De 2024</p>
+      <p className="font-black">February 2025</p>
       <Button variant="ghost" className="p-1 h-6 hover:bg-teal-800 hover:bg-opacity-10">
         <ChevronRight />
       </Button>

@@ -1,9 +1,9 @@
 import Section from "@/components/section/section";
 import Reservation from "./components/reservation";
 
-export default function Booking() {
+export default function BookingCalendar() {
     return (
-        <Section title="Booking by steps" subtitle="a progressive booking form">
+        <Section title="Booking calendar" subtitle="a modern booking calendar ">
             <Reservation />
         </Section>
       )
