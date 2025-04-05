@@ -1,8 +1,6 @@
-# 🎨 Components Laboratory
+# 🧪 Playground
 
 A creative and experimental space where I develop and test different UI components using modern technologies. This project serves as a testing ground for implementing innovative designs and practicing new frontend development techniques.
-
-## 🌐 Demo
 
 You can find the project in production at [https://playground.yolberjp.com](https://playground.yolberjp.com)
 
