@@ -4,20 +4,20 @@ import Link from "next/link";
 
 const links = [
   {
-    href: "/booking-calendar",
-    label: "Booking calendar",
-    icon: <Calendar />
-  },
-  {
     href: "/brutalist-buttons",
     label: "Brutalist buttons",
     icon: <RectangleHorizontal />
   },  
+  {
+    href: "/booking-calendar",
+    label: "Booking calendar",
+    icon: <Calendar />
+  },
 ];
 
 export default function Home() {
   return (
-    <div className="flex flex-col pb-20 gap-10 py-20 px-10 sm:px-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col pb-20 gap-10 py-15 px-10 sm:px-20 font-[family-name:var(--font-geist-sans)]">
       <header className="space-y-4">
         <div className="flex flex-row sm:gap-4 items-center">
           <Shapes className="h-10 w-10 text-yellow-500"/>
