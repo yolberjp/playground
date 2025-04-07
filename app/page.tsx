@@ -1,8 +1,13 @@
 import { Separator } from "@/components/ui/separator";
-import { Calendar, RectangleHorizontal, Shapes } from "lucide-react";
+import { Calendar, RectangleHorizontal, Search, Shapes } from "lucide-react";
 import Link from "next/link";
 
 const links = [
+  {
+    href: "/debounced-search-input",
+    label: "Debounced search input",
+    icon: <Search />
+  }, 
   {
     href: "/brutalist-buttons",
     label: "Brutalist buttons",
@@ -17,7 +22,7 @@ const links = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col pb-20 gap-10 py-15 px-10 sm:px-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col pb-20 gap-10 px-10 sm:px-20 font-[family-name:var(--font-geist-sans)]">
       <header className="space-y-4">
         <div className="flex flex-row sm:gap-4 items-center">
           <Shapes className="h-10 w-10 text-yellow-500"/>
