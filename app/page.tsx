@@ -1,8 +1,13 @@
 import { Separator } from "@/components/ui/separator";
-import { Calendar, RectangleHorizontal, Search, Shapes } from "lucide-react";
+import { Calendar, Image, RectangleHorizontal, Search, Shapes } from "lucide-react";
 import Link from "next/link";
 
 const links = [
+  {
+    href: "/lazy-loading-images",
+    label: "Lazy-loading images",
+    icon: <Image />
+  },
   {
     href: "/debounced-search-input",
     label: "Debounced search input",
@@ -13,11 +18,12 @@ const links = [
     label: "Brutalist buttons",
     icon: <RectangleHorizontal />
   },  
-  {
-    href: "/booking-calendar",
-    label: "Booking calendar",
-    icon: <Calendar />
-  },
+    {
+      href: "/booking-calendar",
+      label: "Booking calendar",
+      icon: <Calendar />
+    },
+    
 ];
 
 export default function Home() {
