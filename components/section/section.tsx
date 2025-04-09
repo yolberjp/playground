@@ -5,16 +5,13 @@ import Link from "next/link";
 export default function Section({
     title,
     subtitle,
-    inspiredBy,
+    credits,
     children,
   }: Readonly<{
     title: string,
     subtitle?: string,
     children: React.ReactNode;
-    inspiredBy?: {
-        name: string,
-        href: string
-    }
+    credits?: React.ReactNode;
   }>){
     return (
         <section className="flex flex-col gap-12 md:gap-8 row-start-2 items-center sm:items-start h-full">
@@ -34,8 +31,8 @@ export default function Section({
             {children}
           </div>
 
-          {inspiredBy && <footer className="flex justify-center w-full py-4">
-            <p className="text-muted-foreground text-sm">Inspired by <a href={inspiredBy.href} target="_blank" rel="noopener noreferrer" className="text-yellow-700 hover:text-yellow-800">{inspiredBy.name}</a> design</p>
+          {credits && <footer className="flex justify-center w-full py-4">
+            {credits}
           </footer>}
         </section>
       )
