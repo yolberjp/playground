@@ -9,7 +9,7 @@ function Credits() {
     return (
         <div className="flex flex-col items-center gap-1">
             <p className="text-muted-foreground text-sm">Images from <a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer" className="text-yellow-700 hover:text-yellow-800">picsum.photos</a></p>
-            <p className="text-muted-foreground text-sm">Inspired by this <a href={linkedinPostUrl} target="_blank" rel="noopener noreferrer" className="text-yellow-700 hover:text-yellow-800">midudev linkedin post</a></p>
+            <p className="text-muted-foreground text-sm">Inspired by <a href={linkedinPostUrl} target="_blank" rel="noopener noreferrer" className="text-yellow-700 hover:text-yellow-800">this post </a>by midudev</p>
         </div>
     )
 }
