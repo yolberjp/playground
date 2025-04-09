@@ -36,7 +36,7 @@ export default function RootLayout({
         <header className="fixed w-full text-xs text-gray-400 text-center md:text-right bg-white/30 backdrop-blur-sm p-4">
           made with the cora <br /> by <a href="https://www.linkedin.com/in/yolberjp/" className="text-yellow-700 hover:text-yellow-800 transition-colors">@yolberjp</a>
         </header>
-        <main className="max-w-6xl pt-20 m-auto px-2 md:px-5">
+        <main className="max-w-6xl pt-20 m-auto px-2 md:px-5 h-screen">
           {children}
         </main>
       </body>
