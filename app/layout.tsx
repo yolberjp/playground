@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Playground",
   description: "Experimental place for tiny components",
   icons: {
-    icon: '/favicon.svg',
+    icon: "/favicon.svg",
   },
 };
 
@@ -34,7 +34,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="fixed w-full text-xs text-gray-400 text-center md:text-right bg-white/30 backdrop-blur-sm p-4 z-10">
-          made with the cora <br /> by <a href="https://www.linkedin.com/in/yolberjp/" className="text-yellow-700 hover:text-yellow-800 transition-colors">@yolberjp</a>
+          made by me :) <br />
+          <a
+            href="https://www.linkedin.com/in/yolberjp/"
+            className="text-yellow-700 hover:text-yellow-800 transition-colors"
+          >
+            @yolberjp
+          </a>
         </header>
         <main className="max-w-6xl pt-20 m-auto px-2 md:px-5 h-screen">
           {children}
