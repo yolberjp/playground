@@ -1,10 +1,15 @@
-import { CalendarIcon, GalleryVerticalEndIcon, ImageIcon, RectangleHorizontalIcon, SearchIcon } from "lucide-react";
+import { CalendarIcon, GalleryVerticalEndIcon, ImageIcon, LayoutGridIcon, RectangleHorizontalIcon, SearchIcon } from "lucide-react";
 
 export const links = [
     {
       href: "/stacked-carousel",
       label: "Stacked carousel",
       icon: <GalleryVerticalEndIcon />,
+    },
+    {
+      href: "/product-gallery",
+      label: "Product gallery",
+      icon: <LayoutGridIcon />
     },
     {
       href: "/lazy-loading-images",
