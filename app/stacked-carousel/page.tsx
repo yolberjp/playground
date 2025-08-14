@@ -22,7 +22,7 @@ export default function StackedCarouselPage() {
         >
       <div className="flex flex-col items-center gap-8">
         <StackedCarousel items={items} iddleDuration={1.4}/>
-        <h2 className="text-5xl md:text-6xl text-center font-semibold font-sans max-w-2xl">Stay in touch anytime, from anywhere.</h2>
+        <h2 className="text-5xl md:text-6xl text-center font-semibold font-sans max-w-2xl">Stay in touch anytime<span className="text-muted-foreground/50">,</span> <br /> from anywhere<span className="text-muted-foreground/50">.</span></h2>
       </div>
     </Section>
 

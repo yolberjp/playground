@@ -99,7 +99,7 @@ export default function StackedCarousel({ items, iddleDuration = 1.5 }: { items:
       />
       <li
         ref={middleStack}
-        className="absolute -top-2 size-19 bg-gray-300 rounded-[20px] z-0"
+        className="absolute -top-2 size-19 bg-gray-400/60 rounded-[20px] z-0"
       />
 
       {items.map((item, index) => (
