@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import {
   CalendarIcon,
+  GalleryVerticalEndIcon,
   ImageIcon,
   LayoutGridIcon,
   RectangleHorizontalIcon,
@@ -10,6 +11,11 @@ import {
 import Link from "next/link";
 
 const links = [
+  {
+    href: "/stacked-carousel",
+    label: "Stacked carousel",
+    icon: GalleryVerticalEndIcon,
+  },
   {
     href: "/product-gallery",
     label: "Product gallery",
@@ -34,7 +40,7 @@ const links = [
     href: "/booking-calendar",
     label: "Booking calendar",
     icon: CalendarIcon,
-  },
+  }
 ];
 
 export default function Home() {
