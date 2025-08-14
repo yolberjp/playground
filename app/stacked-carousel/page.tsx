@@ -1,7 +1,19 @@
 import Section from "@/components/section/section";
+import { FacebookIcon, InstagramIcon, SnapchatIcon, TelegramIcon, ThreadsIcon, TikTokIcon, WhatsappIcon, XIcon } from "./components/AppIcons";
 import StackedCarousel from "./components/stacked-carousel";
 
 export default function StackedCarouselPage() {
+  const items = [
+    <InstagramIcon key="instagram" />,
+    <XIcon key="x" />,
+    <WhatsappIcon key="whatsapp" />,
+    <SnapchatIcon key="snapchat" />,
+    <TikTokIcon key="tiktok" />,
+    <ThreadsIcon key="threads" />,
+    <FacebookIcon key="facebook" />,
+    <TelegramIcon key="telegram" />
+
+  ]
   return (
     <Section
           title="Stacked Carousel"
@@ -9,8 +21,8 @@ export default function StackedCarouselPage() {
           credits={<Credits />}
         >
       <div className="flex flex-col items-center gap-8">
-        <StackedCarousel />
-        <h2 className="text-7xl text-center font-semibold font-sans max-w-4xl">Discover real-world design inspiration.</h2>
+        <StackedCarousel items={items} iddleDuration={1.4}/>
+        <h2 className="text-5xl md:text-6xl text-center font-semibold font-sans max-w-2xl">Stay in touch anytime, from anywhere.</h2>
       </div>
     </Section>
 

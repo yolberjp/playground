@@ -1,25 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { DropBoxIcon, UberIcon, AirbnbIcon } from "./AppIcons";
+import { useEffect, useRef, useState } from "react";
 
-const APPS = [
-  DropBoxIcon,
-  UberIcon,
-  AirbnbIcon
-];
-
-const IDLE_DURATION = 2;
-
-export default function StackedCarousel() {
+export default function StackedCarousel({ items, iddleDuration = 1.5 }: { items: React.ReactNode[], iddleDuration?: number }) {
   const containerRef = useRef<HTMLUListElement>(null);
   const [currentAppIndex, setCurrentAppIndex] = useState(0);
 
   const backStack = useRef<HTMLLIElement>(null);
   const middleStack = useRef<HTMLLIElement>(null);
   const appRefs = useRef<(HTMLLIElement | null)[]>(
-    Array(APPS.length).fill(null)
+    Array(items.length).fill(null)
   );
 
   useEffect(() => {
@@ -45,14 +36,14 @@ export default function StackedCarousel() {
       }
     });
 
-    const nextIndex = (currentAppIndex + 1) % APPS.length;
+    const nextIndex = (currentAppIndex + 1) % items.length;
     const currentAppRef = appRefs.current[currentAppIndex];
     const nextAppRef = appRefs.current[nextIndex];
 
     const timeline = gsap.timeline({ repeat: -1, yoyo: true });
 
     timeline
-      .to({}, { duration: IDLE_DURATION })
+      .to({}, { duration: iddleDuration })
       .to(middleStack.current, {
         y: -12,
         opacity: 1,
@@ -98,7 +89,7 @@ export default function StackedCarousel() {
     return () => {
       timeline.kill();
     };
-  }, [currentAppIndex]);
+  }, [currentAppIndex, items, iddleDuration]);
 
   return (
     <ul ref={containerRef} className="relative size-22 flex flex-col items-center justify-center gap-2">
@@ -111,13 +102,13 @@ export default function StackedCarousel() {
         className="absolute -top-2 size-19 bg-gray-300 rounded-[20px] z-0"
       />
 
-      {APPS.map((AppIcon, index) => (
+      {items.map((item, index) => (
         <li
           key={index}
           ref={el => { appRefs.current[index] = el; }}
           className="absolute"
         >
-          <AppIcon />
+          {item}
         </li>
       ))}
     </ul>
