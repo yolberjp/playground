@@ -1,25 +1,30 @@
-import { Calendar, Image, RectangleHorizontal, Search } from "lucide-react";
+import { CalendarIcon, GalleryVerticalEndIcon, ImageIcon, RectangleHorizontalIcon, SearchIcon } from "lucide-react";
 
 export const links = [
     {
+      href: "/stacked-carousel",
+      label: "Stacked carousel",
+      icon: <GalleryVerticalEndIcon />,
+    },
+    {
       href: "/lazy-loading-images",
       label: "Lazy-loading images",
-      icon: <Image />
+      icon: <ImageIcon />
     },
     {
       href: "/debounced-search-input",
       label: "Debounced search input",
-      icon: <Search />
+      icon: <SearchIcon />
     }, 
     {
       href: "/brutalist-buttons",
       label: "Brutalist buttons",
-      icon: <RectangleHorizontal />
+      icon: <RectangleHorizontalIcon />
     },  
       {
         href: "/booking-calendar",
         label: "Booking calendar",
-        icon: <Calendar />
+        icon: <CalendarIcon />
       },
       
   ];
