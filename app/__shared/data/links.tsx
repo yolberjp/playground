@@ -2,6 +2,11 @@ import { CalendarIcon, GalleryVerticalEndIcon, ImageIcon, LayoutGridIcon, Rectan
 
 export const links = [
     {
+      href: "/text-hero-card",
+      label: "Text hero card",
+      icon: <RectangleHorizontalIcon />,
+    },
+    {
       href: "/stacked-carousel",
       label: "Stacked carousel",
       icon: <GalleryVerticalEndIcon />,
