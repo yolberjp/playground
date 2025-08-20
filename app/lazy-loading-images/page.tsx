@@ -39,7 +39,7 @@ export default async function LazyLoadingImages() {
   const imageIdsToRender = imageIds.sort(() => Math.random() - 0.5).slice(0, 4);
   return (
     <Section
-      title="Lazy-loading Images"
+      title="Lazy-loading images"
       subtitle="Lazy load images with dynamic shadow"
       credits={<Credits />}
     >

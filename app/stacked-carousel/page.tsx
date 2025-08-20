@@ -17,7 +17,7 @@ export default function StackedCarouselPage() {
 
   return (
     <Section
-          title="Stacked Carousel"
+          title="Stacked carousel"
           subtitle="Vertical carousel ideal for showcasing app icons or images."
           credits={<Credits />}
         >

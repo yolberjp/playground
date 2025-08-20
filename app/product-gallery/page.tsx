@@ -24,7 +24,7 @@ function Credits() {
 export default function ProductGallery() {
   return (
     <Section
-      title="Product Gallery"
+      title="Product gallery"
       subtitle="A list of minimalist product cards"
       credits={<Credits />}
     >

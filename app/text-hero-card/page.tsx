@@ -5,7 +5,7 @@ export default function TextHeroCardPage(){
 
     return (
         <Section
-            title="Text Hero Card"
+            title="Text hero card"
             subtitle="A simple hero card with a moving gradient text background"
             credits={<Credits />}
         >

@@ -1,10 +1,10 @@
-import { CalendarIcon, GalleryVerticalEndIcon, ImageIcon, LayoutGridIcon, RectangleHorizontalIcon, SearchIcon } from "lucide-react";
+import { CalendarIcon, GalleryVerticalEndIcon, ImageIcon, LayoutGridIcon, RectangleHorizontalIcon, SearchIcon, TypeOutlineIcon } from "lucide-react";
 
 export const links = [
     {
       href: "/text-hero-card",
       label: "Text hero card",
-      icon: <RectangleHorizontalIcon />,
+      icon: <TypeOutlineIcon />,
     },
     {
       href: "/stacked-carousel",
